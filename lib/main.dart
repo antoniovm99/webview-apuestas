@@ -39,20 +39,20 @@ class _MyAppState extends State<Welcomescreen> {
       seconds: 10,
       navigateAfterSeconds: new MyHomePage(title: 'Apuestas online'),
       
-      title: new Text('🚀Nuestra Pasion, el futbol ⚽ Objetivo: Ganar dinero 💯',
+      title: new Text('🚀La Pasion del Futbol nos une⚽',
       style: new TextStyle(
-        color: Colors.red,
+        color: Colors.white,
         fontWeight: FontWeight.normal,
-        fontSize: 30.0,
+        fontSize: 10.0,
         fontFamily: 'Roboto',
         fontStyle: FontStyle.italic,
       ),),
-      image: new Image.network('https://media.giphy.com/media/TjIylvEZQy27S/giphy.gif'),
-      backgroundColor: Colors.white,
+      image: new Image.asset('assets/instagramlogo.png'),
+      backgroundColor: Color(0xFF2F689B),
       styleTextUnderTheLoader: new TextStyle(),
       photoSize: 100.0,
       onClick: ()=>print("LAS MEJORES APUESTAS DE COLOMBIA"),
-      loaderColor: Colors.purple,
+      loaderColor: Colors.white,
     );
     
   }
@@ -96,7 +96,8 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
-        title: new Image.network('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Google%2B_logo.svg/2000px-Google%2B_logo.svg.png', width: 200.0,),
+        centerTitle: true,
+        title: new Image.asset('assets/googlelogo.png'),
       ),
       body: WebView(
         initialUrl: 'https://youtube.com',
@@ -110,7 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
       child: new Stack(
         children: <Widget>[
           Align(
-            alignment: Alignment.bottomLeft,
+            alignment: Alignment.bottomRight,
             child: new Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: <Widget>[
@@ -122,7 +123,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
                 new Container(
-                  height: 20.0,
+                  height: 10.0,
                 ), // a space
                 Container(
                   height: 60.0,
@@ -141,5 +142,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }  
 }
-
 
