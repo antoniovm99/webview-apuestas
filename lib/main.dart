@@ -43,7 +43,7 @@ class _MyAppState extends State<Welcomescreen> {
       style: new TextStyle(
         color: Colors.white,
         fontWeight: FontWeight.normal,
-        fontSize: 10.0,
+        fontSize: 20.0,
         fontFamily: 'Roboto',
         fontStyle: FontStyle.italic,
       ),),
